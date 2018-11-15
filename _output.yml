@@ -5,10 +5,10 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">A Knowledge Ecosystem: Deep Learning and Education</a></li>
+        <li><a href="./">A Dyad Approach to Language Learning</a></li>
       after: |
-        <li><a href="https://github.com/dyadxmachina/can-machines-teach" target="blank">Github</a></li>
-    edit: https://github.com/dyadxmachina/can-machines-teach/edit/master/%s
+        <li><a href="https://github.com/dyadxmachina/dyad-language-learning" target="blank">Github</a></li>
+    edit: https://github.com/dyadxmachina/dyad-language-learning/edit/master/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
