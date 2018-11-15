@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>A Dyadic Approach to Learning Languages</title>
+  <meta name="description" content="Learning a language is difficult and it should be, learning any new form of expression is a brain altering process that takes commitment. I set out to learn my partner Haohan’s Wang first learned language Mandarin more than three yeras ago. We took a very different approach which will explain. We will attempt to cover what worked and what did not. Along with an immersion plan. Learning as a dyad, has great advantages but since you are balancing a relationship it can be extremely difficult.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="A Dyadic Approach to Learning Languages" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://github.com/dyadxmachina/dyad-language-learning" />
+  <meta property="og:image" content="https://github.com/dyadxmachina/dyad-language-learningimg/MtoQA.png" />
+  <meta property="og:description" content="Learning a language is difficult and it should be, learning any new form of expression is a brain altering process that takes commitment. I set out to learn my partner Haohan’s Wang first learned language Mandarin more than three yeras ago. We took a very different approach which will explain. We will attempt to cover what worked and what did not. Along with an immersion plan. Learning as a dyad, has great advantages but since you are balancing a relationship it can be extremely difficult." />
+  <meta name="github-repo" content="dyadxmachina/dyad-language-learning" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Dyadic Approach to Learning Languages" />
+  
+  <meta name="twitter:description" content="Learning a language is difficult and it should be, learning any new form of expression is a brain altering process that takes commitment. I set out to learn my partner Haohan’s Wang first learned language Mandarin more than three yeras ago. We took a very different approach which will explain. We will attempt to cover what worked and what did not. Along with an immersion plan. Learning as a dyad, has great advantages but since you are balancing a relationship it can be extremely difficult." />
+  <meta name="twitter:image" content="https://github.com/dyadxmachina/dyad-language-learningimg/MtoQA.png" />
+
+<meta name="author" content="Fanli Zheng (Christian) &amp; Haohan Wang">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="introduction.html">
+<link rel="next" href="concepts.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128379860-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128379860-3');
+</script>
+
+<!-- Primary Meta Tags -->
+<title>Teaching Machines - Artificial Intelligence and Education </title>
+<meta name="title" content="Teaching Machines - Artificial Intelligence and Education ">
+<meta name="description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dyadxmachina.github.io/can-machines-teach/">
+<meta property="og:title" content="Teaching Machines - Artificial Intelligence and Education learn the math needed to design artificial neural networks">
+<meta property="og:description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+<meta property="og:image" content="https://dyadxmachina.github.io/can-machines-teach/img/MtoQA.png">
+
+
+<!-- Primary Meta Tags -->
+<title>Teaching Machines - Artificial Intelligence and Education by Haohan Wang and Fanli (Christian) Zheng</title>
+<meta name="title" content="Teaching Machines - Artificial Intelligence and Education by Haohan Wang and Fanli (Christian) Zheng">
+<meta name="description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dyadxmachina.github.io/can-machines-teach/">
+<meta property="og:title" content="Teaching Machines - Artificial Intelligence and Education by Haohan Wang and Fanli (Christian) Zheng">
+<meta property="og:description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+<meta property="og:image" content="https://dyadxmachina.github.io/can-machines-teach/img/MtoQA.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://dyadxmachina.github.io/can-machines-teach/">
+<meta property="twitter:title" content="Teaching Machines - Artificial Intelligence and Education by Haohan Wang and Fanli (Christian) Zheng">
+<meta property="twitter:description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+<meta property="twitter:image" content="https://dyadxmachina.github.io/can-machines-teach/img/MtoQA.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://dyadxmachina.github.io/can-machines-teach/">
+<meta property="twitter:title" content="Teaching Machines - Artificial Intelligence and Education by Haohan Wang and Fanli (Christian) Zheng ">
+<meta property="twitter:description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+<meta property="twitter:image" content="https://dyadxmachina.github.io/can-machines-teach/img/MtoQA.png">
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Knowledge Ecosystem: Deep Learning and Education</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="primary-concerns.html"><a href="primary-concerns.html"><i class="fa fa-check"></i><b>2</b> Primary Concerns</a><ul>
+<li class="chapter" data-level="2.1" data-path="primary-concerns.html"><a href="primary-concerns.html#passive-consumption-and-untested-knowledge"><i class="fa fa-check"></i><b>2.1</b> Passive Consumption and Untested Knowledge</a></li>
+<li class="chapter" data-level="2.2" data-path="primary-concerns.html"><a href="primary-concerns.html#knowledge-ecosystem-example"><i class="fa fa-check"></i><b>2.2</b> Knowledge Ecosystem Example</a></li>
+<li class="chapter" data-level="2.3" data-path="primary-concerns.html"><a href="primary-concerns.html#the-problem-of-knowledge-representation"><i class="fa fa-check"></i><b>2.3</b> The Problem of Knowledge Representation</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="concepts.html"><a href="concepts.html"><i class="fa fa-check"></i><b>3</b> Concepts</a><ul>
+<li class="chapter" data-level="3.1" data-path="concepts.html"><a href="concepts.html#knowledge-footprint"><i class="fa fa-check"></i><b>3.1</b> Knowledge Footprint</a></li>
+<li class="chapter" data-level="3.2" data-path="concepts.html"><a href="concepts.html#knowledge-journeys"><i class="fa fa-check"></i><b>3.2</b> Knowledge Journeys</a></li>
+<li class="chapter" data-level="3.3" data-path="concepts.html"><a href="concepts.html#collective-human-knowledge-graph"><i class="fa fa-check"></i><b>3.3</b> Collective Human Knowledge Graph</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="concepts.html"><a href="concepts.html#ec2qa-network"><i class="fa fa-check"></i><b>3.3.1</b> EC2QA Network</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="concepts.html"><a href="concepts.html#knowledge-ecosystem-example-1"><i class="fa fa-check"></i><b>3.4</b> Knowledge Ecosystem Example</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html"><i class="fa fa-check"></i><b>4</b> Implementing the Knowledge Ecosystem</a><ul>
+<li class="chapter" data-level="4.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#problem-formulation"><i class="fa fa-check"></i><b>4.1</b> Problem Formulation</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#before-we-start"><i class="fa fa-check"></i><b>4.1.1</b> Before we start…</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#learning-feedback"><i class="fa fa-check"></i><b>4.2</b> Learning + Feedback</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#question-formulation"><i class="fa fa-check"></i><b>4.2.1</b> Question Formulation</a></li>
+<li class="chapter" data-level="4.2.2" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#question-generation"><i class="fa fa-check"></i><b>4.2.2</b> Question Generation</a></li>
+<li class="chapter" data-level="4.2.3" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#answer-generation"><i class="fa fa-check"></i><b>4.2.3</b> Answer Generation</a></li>
+<li class="chapter" data-level="4.2.4" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#summary-of-learning-and-feedback-networks-draft"><i class="fa fa-check"></i><b>4.2.4</b> Summary of Learning and Feedback Networks [DRAFT]</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#knowledge-graph-draft"><i class="fa fa-check"></i><b>4.3</b> Knowledge Graph [DRAFT]</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#summary-of-knowledge-graph-draft"><i class="fa fa-check"></i><b>4.3.1</b> Summary of Knowledge Graph [DRAFT]</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#knowledge-journeys-draft"><i class="fa fa-check"></i><b>4.4</b> Knowledge Journeys [DRAFT]</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#summary-of-current-research-and-needs-draft"><i class="fa fa-check"></i><b>4.4.1</b> Summary of Current Research and Needs [DRAFT]</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#data-and-annotation-draft"><i class="fa fa-check"></i><b>4.5</b> Data and Annotation [DRAFT]</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#reference-draft"><i class="fa fa-check"></i><b>4.5.1</b> Reference [DRAFT]</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
+<li class="chapter" data-level="6" data-path="about-authors.html"><a href="about-authors.html"><i class="fa fa-check"></i><b>6</b> About Authors</a><ul>
+<li class="chapter" data-level="6.1" data-path="about-authors.html"><a href="about-authors.html#haohan-wang"><i class="fa fa-check"></i><b>6.1</b> Haohan Wang</a></li>
+<li class="chapter" data-level="6.2" data-path="about-authors.html"><a href="about-authors.html#fanli-zheng-christian-ramsey"><i class="fa fa-check"></i><b>6.2</b> Fanli Zheng (Christian Ramsey)</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>7</b> References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/dyadxmachina/can-machines-teach" target="blank">Github</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Dyadic Approach to Learning Languages</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="primary-concerns" class="section level1">
+<h1><span class="header-section-number">2</span> Primary Concerns</h1>
+<p>There are 3 popular concerns that I will attempt to address in this article about online knowledge acquisition that stand in the way of having an adaptive and reliable knowledge ecosystem. I will attempt to present a system that can sufficiently overcome each of the concerns here and in the implementation section.</p>
+<p>There are as follows:</p>
+<ul>
+<li><strong>Passive Consumption</strong> - most of online content is viewed passively by the learner and the result of passive consumption is that learner’s do not grasp the concepts or master the content being taught.</li>
+<li><strong>Untested Knowledge</strong> - even if the learner was engaged while viewing a piece of educational content their knowledge is untested and therefore it isn’t clear if they’ve mastered the content accurately and in some sense holistically.</li>
+<li><strong>Knowledge Representation</strong> - even if the learner was engaged (1) and their knowledge was tested (2), simply knowing the counts or types of video they watched doesn’t make their knowledge predictable and useful to others. In fact, even the learner may be unaware of all of what they’ve viewed.</li>
+</ul>
+<div id="passive-consumption-and-untested-knowledge" class="section level2">
+<h2><span class="header-section-number">2.1</span> Passive Consumption and Untested Knowledge</h2>
+<blockquote>
+<p>How would such an ecosystem insure us against passive consumption?</p>
+</blockquote>
+<p>Scenario #1: A learner goes online and begins watching a series on Machine Learning. How do we engage and test a user’s knowledge?</p>
+<p>Proposition: Using advances in deep learning, we propose a dual question and answer generation given the educational content.</p>
+<p>Result: A learner gets a set of questions and multiple choice answers throughout the video. Keeping the user engaged and sharp to ensure they can answer each of the questions.</p>
+<p>As you can see, I’ve bundled passive consumption and untested knowledge because our proposed ecosystem approaches both of these by always testing knowledge. I will show the current results in deep learning in the implementation stage.</p>
+</div>
+<div id="knowledge-ecosystem-example" class="section level2">
+<h2><span class="header-section-number">2.2</span> Knowledge Ecosystem Example</h2>
+<div class="figure">
+<img src="img/knowledgeEcosystem.png" alt="Knowledge Ecosystem" />
+<p class="caption">Knowledge Ecosystem</p>
+</div>
+<p>Given a piece of educational content, our knowledge system will generate a set of questions and answers that theoretically capture the major concepts and facts that the learner should know after viewing a part or the content in whole.</p>
+<p>You can imagine watching a Youtube video and after a learner views 15 minutes of an hour long lecture on computational complexity a quiz is presented (a set of questions and answers conditioned on the past 15 minutes of video,) and the results are recorded. In the future we would also be able to use the knowledge graph</p>
+<p>The knowledge system would only consider content that has been watched with some engagement or if they can test out of the content.</p>
+</div>
+<div id="the-problem-of-knowledge-representation" class="section level2">
+<h2><span class="header-section-number">2.3</span> The Problem of Knowledge Representation</h2>
+<blockquote>
+<p>Given how many learner’s online knowledge acquisition varies and has been invisible up to now, how we can best represent their knowledge?</p>
+</blockquote>
+<p>Scenario #2: A learner has a degree in Public Health, but since graduating, they’ve been studying machine learning for the last 3 years. The learner now wants to apply to a job that requires Health and Statistics. How do we represent their traditional and updated knowledge?</p>
+<p>This is a tricky problem that goes beyond any given algorithm. The exact design of a <strong>knowledge footprint</strong> and a <strong>knowledge journey</strong> has been attempted and we will not cover that in depth here. The proposed system presupposed the design of the knowledge footprint.</p>
+<p>There are two problems, &gt; how do we reduce someone’s knowledge (in this case a set of educational content and their respective scores) into a symbol</p>
+<p>Proposition: We introduce <strong>knowledge journeys</strong> and the <strong>knowledge graph</strong> as a way to make sense and structure a learner’s knowledge acquisition. The collective <strong>knowledge graph</strong> will tell us about the subject the learner is studying and we can use this to compare to others and create a relative comparison.</p>
+<p>Result: Reducing a learner’s <strong>knowledge journey</strong> into a common set of elements that makeup into their <strong>knowledge footprint</strong> which would look similar to those with similar journeys.</p>
+<p>So the employeer, now familiar with the footprints can see the overlap between the current employee’s and a prospective employee.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="concepts.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/dyadxmachina/can-machines-teach/edit/master/01-intro.Rmd",
+"text": "Edit"
+},
+"download": ["A Dyadic Approach to Learning Language.pdf", "A Dyadic Approach to Learning Language.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

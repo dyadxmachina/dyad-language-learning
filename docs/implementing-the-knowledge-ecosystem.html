@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>A Dyadic Approach to Learning Languages</title>
+  <meta name="description" content="Learning a language is difficult and it should be, learning any new form of expression is a brain altering process that takes commitment. I set out to learn my partner Haohan’s Wang first learned language Mandarin more than three yeras ago. We took a very different approach which will explain. We will attempt to cover what worked and what did not. Along with an immersion plan. Learning as a dyad, has great advantages but since you are balancing a relationship it can be extremely difficult.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="A Dyadic Approach to Learning Languages" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://github.com/dyadxmachina/dyad-language-learning" />
+  <meta property="og:image" content="https://github.com/dyadxmachina/dyad-language-learningimg/MtoQA.png" />
+  <meta property="og:description" content="Learning a language is difficult and it should be, learning any new form of expression is a brain altering process that takes commitment. I set out to learn my partner Haohan’s Wang first learned language Mandarin more than three yeras ago. We took a very different approach which will explain. We will attempt to cover what worked and what did not. Along with an immersion plan. Learning as a dyad, has great advantages but since you are balancing a relationship it can be extremely difficult." />
+  <meta name="github-repo" content="dyadxmachina/dyad-language-learning" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Dyadic Approach to Learning Languages" />
+  
+  <meta name="twitter:description" content="Learning a language is difficult and it should be, learning any new form of expression is a brain altering process that takes commitment. I set out to learn my partner Haohan’s Wang first learned language Mandarin more than three yeras ago. We took a very different approach which will explain. We will attempt to cover what worked and what did not. Along with an immersion plan. Learning as a dyad, has great advantages but since you are balancing a relationship it can be extremely difficult." />
+  <meta name="twitter:image" content="https://github.com/dyadxmachina/dyad-language-learningimg/MtoQA.png" />
+
+<meta name="author" content="Fanli Zheng (Christian) &amp; Haohan Wang">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="concepts.html">
+<link rel="next" href="conclusion.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128379860-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128379860-3');
+</script>
+
+<!-- Primary Meta Tags -->
+<title>Teaching Machines - Artificial Intelligence and Education </title>
+<meta name="title" content="Teaching Machines - Artificial Intelligence and Education ">
+<meta name="description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dyadxmachina.github.io/can-machines-teach/">
+<meta property="og:title" content="Teaching Machines - Artificial Intelligence and Education learn the math needed to design artificial neural networks">
+<meta property="og:description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+<meta property="og:image" content="https://dyadxmachina.github.io/can-machines-teach/img/MtoQA.png">
+
+
+<!-- Primary Meta Tags -->
+<title>Teaching Machines - Artificial Intelligence and Education by Haohan Wang and Fanli (Christian) Zheng</title>
+<meta name="title" content="Teaching Machines - Artificial Intelligence and Education by Haohan Wang and Fanli (Christian) Zheng">
+<meta name="description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dyadxmachina.github.io/can-machines-teach/">
+<meta property="og:title" content="Teaching Machines - Artificial Intelligence and Education by Haohan Wang and Fanli (Christian) Zheng">
+<meta property="og:description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+<meta property="og:image" content="https://dyadxmachina.github.io/can-machines-teach/img/MtoQA.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://dyadxmachina.github.io/can-machines-teach/">
+<meta property="twitter:title" content="Teaching Machines - Artificial Intelligence and Education by Haohan Wang and Fanli (Christian) Zheng">
+<meta property="twitter:description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+<meta property="twitter:image" content="https://dyadxmachina.github.io/can-machines-teach/img/MtoQA.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://dyadxmachina.github.io/can-machines-teach/">
+<meta property="twitter:title" content="Teaching Machines - Artificial Intelligence and Education by Haohan Wang and Fanli (Christian) Zheng ">
+<meta property="twitter:description" content="Let's start with a future view of an individual's education. Many of us have used the internet to educate ourselves with the abundance of high quality videos, papers, articles, podcasts and how-tos all over the web. Let us imagine that all of what you have learned online (throughout the entirety of your life), from the hundreds of Youtube videos, Wikipedia articles, Nature papers, and podcasts you've read, watched, or listened to, were all consolidated into what we might call a **digital education footprint**.   The **digital education footprint** would string together our online education into a concrete representation of an individual's online education and could be extended into more formal settings. By showcasing the broad range of individual's knowledge (making digital music) as well as the places they've went deeper than most (deep learning or philosophy of mathematics), we could begin to accept education as a life-long journey rather than one monolithic part of an individual's past. This would begin to show us a more accurate depiction of individual's education that could be updated each and everytime one educates themselves. With every new year, their footprint would evolve just as the very thread of their lives would. Visualised over time, we would be able to see an individual's journey or even a whole communities. Seeing how differen  In this essay, I will propose a new way to approach education which will require significant effort to bring to life but I believe the benefits will surely outweigh the costs. I'll talk about how we can use machine learning and deep learning in particular to help create our **digital education footprint**, **student journeys**, and a collective human knowledge graph. This will allow us to take the space of unstructured educational content and begin to map it unto a knowledge graph and use generative models to make educational content engaging and test a student's knowledge no matter the subject. I will name a few benefits of such a future. ">
+<meta property="twitter:image" content="https://dyadxmachina.github.io/can-machines-teach/img/MtoQA.png">
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Knowledge Ecosystem: Deep Learning and Education</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="primary-concerns.html"><a href="primary-concerns.html"><i class="fa fa-check"></i><b>2</b> Primary Concerns</a><ul>
+<li class="chapter" data-level="2.1" data-path="primary-concerns.html"><a href="primary-concerns.html#passive-consumption-and-untested-knowledge"><i class="fa fa-check"></i><b>2.1</b> Passive Consumption and Untested Knowledge</a></li>
+<li class="chapter" data-level="2.2" data-path="primary-concerns.html"><a href="primary-concerns.html#knowledge-ecosystem-example"><i class="fa fa-check"></i><b>2.2</b> Knowledge Ecosystem Example</a></li>
+<li class="chapter" data-level="2.3" data-path="primary-concerns.html"><a href="primary-concerns.html#the-problem-of-knowledge-representation"><i class="fa fa-check"></i><b>2.3</b> The Problem of Knowledge Representation</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="concepts.html"><a href="concepts.html"><i class="fa fa-check"></i><b>3</b> Concepts</a><ul>
+<li class="chapter" data-level="3.1" data-path="concepts.html"><a href="concepts.html#knowledge-footprint"><i class="fa fa-check"></i><b>3.1</b> Knowledge Footprint</a></li>
+<li class="chapter" data-level="3.2" data-path="concepts.html"><a href="concepts.html#knowledge-journeys"><i class="fa fa-check"></i><b>3.2</b> Knowledge Journeys</a></li>
+<li class="chapter" data-level="3.3" data-path="concepts.html"><a href="concepts.html#collective-human-knowledge-graph"><i class="fa fa-check"></i><b>3.3</b> Collective Human Knowledge Graph</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="concepts.html"><a href="concepts.html#ec2qa-network"><i class="fa fa-check"></i><b>3.3.1</b> EC2QA Network</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="concepts.html"><a href="concepts.html#knowledge-ecosystem-example-1"><i class="fa fa-check"></i><b>3.4</b> Knowledge Ecosystem Example</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html"><i class="fa fa-check"></i><b>4</b> Implementing the Knowledge Ecosystem</a><ul>
+<li class="chapter" data-level="4.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#problem-formulation"><i class="fa fa-check"></i><b>4.1</b> Problem Formulation</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#before-we-start"><i class="fa fa-check"></i><b>4.1.1</b> Before we start…</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#learning-feedback"><i class="fa fa-check"></i><b>4.2</b> Learning + Feedback</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#question-formulation"><i class="fa fa-check"></i><b>4.2.1</b> Question Formulation</a></li>
+<li class="chapter" data-level="4.2.2" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#question-generation"><i class="fa fa-check"></i><b>4.2.2</b> Question Generation</a></li>
+<li class="chapter" data-level="4.2.3" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#answer-generation"><i class="fa fa-check"></i><b>4.2.3</b> Answer Generation</a></li>
+<li class="chapter" data-level="4.2.4" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#summary-of-learning-and-feedback-networks-draft"><i class="fa fa-check"></i><b>4.2.4</b> Summary of Learning and Feedback Networks [DRAFT]</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#knowledge-graph-draft"><i class="fa fa-check"></i><b>4.3</b> Knowledge Graph [DRAFT]</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#summary-of-knowledge-graph-draft"><i class="fa fa-check"></i><b>4.3.1</b> Summary of Knowledge Graph [DRAFT]</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#knowledge-journeys-draft"><i class="fa fa-check"></i><b>4.4</b> Knowledge Journeys [DRAFT]</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#summary-of-current-research-and-needs-draft"><i class="fa fa-check"></i><b>4.4.1</b> Summary of Current Research and Needs [DRAFT]</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#data-and-annotation-draft"><i class="fa fa-check"></i><b>4.5</b> Data and Annotation [DRAFT]</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="implementing-the-knowledge-ecosystem.html"><a href="implementing-the-knowledge-ecosystem.html#reference-draft"><i class="fa fa-check"></i><b>4.5.1</b> Reference [DRAFT]</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
+<li class="chapter" data-level="6" data-path="about-authors.html"><a href="about-authors.html"><i class="fa fa-check"></i><b>6</b> About Authors</a><ul>
+<li class="chapter" data-level="6.1" data-path="about-authors.html"><a href="about-authors.html#haohan-wang"><i class="fa fa-check"></i><b>6.1</b> Haohan Wang</a></li>
+<li class="chapter" data-level="6.2" data-path="about-authors.html"><a href="about-authors.html#fanli-zheng-christian-ramsey"><i class="fa fa-check"></i><b>6.2</b> Fanli Zheng (Christian Ramsey)</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>7</b> References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/dyadxmachina/can-machines-teach" target="blank">Github</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Dyadic Approach to Learning Languages</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="implementing-the-knowledge-ecosystem" class="section level1">
+<h1><span class="header-section-number">4</span> Implementing the Knowledge Ecosystem</h1>
+<p>In this section, we are set to solve the following question:</p>
+<blockquote>
+<p>How might we approach designing such a system.</p>
+</blockquote>
+<p>I will walk you through some possible implementations of the proposed knowledge ecosystem. I will be presenting the current research in machine learning that is relevant to each component of the knowledge ecosystem and also discuss this new artificial neural network architecture EC2VQA and one possible instansitation of that.</p>
+<p>Note that this is not the blueprint, each of these components can be developed independently and vary from what you find here. This is a provocation for getting started on the knowledge ecosystem today.</p>
+<div id="problem-formulation" class="section level2">
+<h2><span class="header-section-number">4.1</span> Problem Formulation</h2>
+<p>Building such a digital knowledge ecosystem like the one we just visioned is not a trivial task. We would need to break this ecosystem into few key building blocks as below so that we can set out to tackle them one by one.</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Learning + Feedback</strong> – given a learner consumes a piece of educational content, reliably evaluate their knowledge and provide the feedback for improvement to support their learning. (credibility, rigour)</p></li>
+<li><p><strong>Knowledge Graph</strong> – general knowledge blueprint as a map to piece together all the content that is currently available. (relatibility, predictability)</p></li>
+<li><p><strong>Knowledge Journeys</strong> – given a piece of educational content, classify it within a knowledge graph; given multiple learner journeys, create a way to customize their own growth journey while offereing a way for them them to compare, connect with and follow, other’s journey (compare, traverse, curiosity)</p></li>
+<li><p><strong>Knowledge Footprint</strong> – given a learner’s journey, collapse it into a representative symbol(s) (digital education footprint) (relatibility, stable but evolving system )</p></li>
+</ol>
+<p>Much of the element #1 and #2 have been made possible with the recent breakthoughs in machine learning especially in the filed of deep learning. A few other pieces like the element #3 and #4 may require a more advanced framework that has not been proposed yet to best resolve. Let’s first take a look at some methods that might come handy when applying to our problems.</p>
+<div id="before-we-start" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Before we start…</h3>
+<p>As what we discussed above, one of the possible and optimal solutions so far for building our ecosystem is using current state-of-art deep learning algorithms in the related domains. Here I will walk you through some thought provoking research summary in a form of survey.</p>
+<p>To best illustrate the problem and possible solutions, we will for now reduce the complexity of the problem. Keep in mind that our ultimate goal is to be able to apply our system to any type of online available educational content. As what we have mentioned earlier, educational videos seem to be one of the top options for people when it comes to knowledge acquisition. Let’s explore some of the solutions that can enable us to apply our system on those video educational content.</p>
+</div>
+</div>
+<div id="learning-feedback" class="section level2">
+<h2><span class="header-section-number">4.2</span> Learning + Feedback</h2>
+<div id="question-formulation" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Question Formulation</h3>
+<p>We consider learning + feedback as a key building block of the ecosystem which is the cure for our primary concern over passive knowledge consumption and untested knowledge of learners. Here, we will be addressing this problem and its possible solutions in deatails so that we can provide our learners a credible and interactive learning + feedback experience system to best support their knowledge acuqisition.</p>
+<p>A salient question that we have to ask ourselves before deisgning such a system is that:</p>
+<blockquote>
+<p>“how can we take a piece of educational content and properly test a learners’ knowledge and provide insightful feedbacks to support their learning?”.</p>
+</blockquote>
+<p>In previous years, deep learning research has taken up a similar problem titled Question Generation (QG) and Question Answering (QA).</p>
+<p>Question Generation (QG) is part of NLP. The goal of QG is to generate questions according to some given information. It could be used in many different scenarios i.e. generating questions for reading comprehension, generating data from large scale question-answering pairs or even generating questions from images. Earlier approaches to QG mainly used human-crafted rules and patterns to transform a descriptive sentence to a related question. Recent neural network-based approaches represent the state-of-art of most of those tasks and this approach has been successfully applied to many other NLP tasks i.e. neural machine translation, summarization, etc. As the training optimization studies progress, the stability and performance improvements are gauranteed.</p>
+<p>As for Question Answering (QA) task, it is a well-researched problem in NLP as well. Recently, QA has also been used to develop dialog systems and chatbots designed to simulate human conversation. Traditionally, most of the research used a pipeline of conventional linguistically-based NLP techniques i.e. parsing, part-of-speech tagging and coreference resolution. However, with recent developments in deep learning, neural network models have shown promise for QA. Further improvement i.e.attention mechanism and memory networks allow the network to focus on the most revevant facts such that they achieved state-of-art performance for QA.</p>
+<p>Now we have some basic understanding of these 2 problems that we will be investigaing more in depth later. Consider the next question:</p>
+<blockquote>
+<p>“what types of questions &amp; answers would be best to test a learner’s knowledge given a piece of educational content (i.e. a lecture video)”</p>
+</blockquote>
+<p>Let’s say a learner is watching a video about hypothesis testing, after showing an example and given the data needed to test the hypothesis. Then the system will pause the video and ask:</p>
+<ol style="list-style-type: decimal">
+<li><p>What is the p-value for this test? (and provide multiple choices for learner to choose from)</p></li>
+<li><p>Is this a 1-sided test? (answers provided would be: YES or NO)</p></li>
+<li><p>How would you intepret the p-value in the context of this example.</p></li>
+<li><p>Based on your calculation, summarize the conclusion of this hypothesis testing for me.</p></li>
+</ol>
+<p>It is also ideal to ask learner the question as follows after showing the solution and explanation:</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Tell me what you have learned through this example.</li>
+</ol>
+<p>As shown above, we would call questions #1 and #2 close-ended questions; question #3 and #4 specific open-ended questions; and question #5 a general open-ended question.</p>
+<p>So the formulation for both of these is to:</p>
+<ol style="list-style-type: decimal">
+<li><p>Generate close-ended question + Answers pairs</p></li>
+<li><p>Generate specific open-ended question + Answers pairs</p></li>
+<li><p>Evaluate and comment on the general open-ended answers</p></li>
+</ol>
+<p>In terms of the close-ended, the answers can be well defined and evaluated. However, the process might be a little bit tricky when it comes to the open-ended questions. We will approach each of them here from the current research.</p>
+<p>** Why deep learning? **</p>
+<p>As we stated above, deep learning has achieved state-of-art performance in both QG and QA tasks. Now let’s take a close look at why.</p>
+<p>If you pay close attention to the question generation and answer generation set of problems, we can easily frame this problem into a general machine learning problem in which we need to find the relationship between the educational content and the meaningful question &amp; answer pairs that is associated with the content. In other words, our problem could be simplified as learning a function that is capable of capture the relationship between our input and output, that is to say, appropriately map the educational content to the desired question and answer pairs with this function.</p>
+<p>To the best of our knowledge, deep learning is one of the most optimal techniques currently developed to solve such an issue.</p>
+<p>As we all know that machine learninag is a set of algorithms that can be used to parse data, learn from the data, and then apply what they have learned to make intelligent decisions. Or more specifically,</p>
+<p>Deep learning is a subset of machine learning and it belongs to a family of representation learning. Inside this family, deep learning is good at sampling the features and have additonal layers for more abstract feature learning which will support the final goal of mapping the feature to the output.</p>
+<p>Because of the above advantages, deep learning is known as one of the most flexible machine learning algorithms that can learn and map the <strong>deep representation</strong> from the data. Also, deep nueral networks architecture can be composed into a single differentiable function and trained end-to-end until it converges. As a result, they can help identify the suitable <em>inductive</em> <em>biases</em> catered to the training data.</p>
+<p>Moreover, deep learning outperforms other techniques when the training data size is large which fits our siutation well. We have a large amound of educational content that is currently available on the web.</p>
+<p>The large amount content creates another problem that can be avoided with deep learning as well, which is it’s going to very troublesome to do feature engineering manually. When there is lack of domain understanding for feature introspection, deep learning is preferable.</p>
+<p>In the end, deep learning really shines when it comes to many complex reserach problems such as NLP, Visual Recognition and Speech recognition. For solving our task, all those domians will possibly be invloved.</p>
+</div>
+<div id="question-generation" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> Question Generation</h3>
+<p>First, let’s take a look at question generation (QG) problem.</p>
+<p>The ideal goal of an automatic question generation is to generate a question Q that is syntactically and semantically correct, relevant to the context and meaningful to answer.</p>
+<p>In order to achieve this goal,, we need to train an algorithm to learn the underlying conditional probability distribution <span class="math display">\[P_{\theta}(Q|X)\]</span> parametrized by <span class="math inline">\(\theta\)</span>. In other words, we can think of this problem as the same one that requires the model learn a function (with a set of parameters) <span class="math inline">\(\theta\)</span> during the training stage using content-question pairs so that the probability <span class="math inline">\(P_{\theta}(Q|P)\)</span> is maximized over the given training dataset.</p>
+<p>It is also helpful to frame this problem into a seq2seq learning problem since both the input and the output is most likely a sequence of text character that the model needs to process and learn the relationship from.</p>
+<div id="case-studies" class="section level4">
+<h4><span class="header-section-number">4.2.2.1</span> Case Studies</h4>
+<ol style="list-style-type: decimal">
+<li>In this paper <a href="http://www.princeton.edu/~shitingl/papers/18l@s-qgen.pdf">QG-Net: A Data-Driven Question Generation Model for Educational Content</a>. They use a bi-directional LSTM network to process the input context words sequence. Encoding the answer into context word vectors.</li>
+</ol>
+<p>QG-Net generates questions by iteratively sampling question words from the conditional probability distribution <span class="math inline">\(P(Q|C,A,\theta)\)</span> where <span class="math inline">\(\theta\)</span> denotes the set of parameters. In order to construct the probability distribution, they first create a <strong>context reader</strong> that process each word <span class="math inline">\(c_j\)</span> in the input context and turns it into a fix-sized representation <span class="math inline">\(h_j\)</span></p>
+<p>Then, they used a <strong>question generator</strong> generates the question text word-by-word, given all context word representation and all question words in previous time steps.</p>
+<p>As for the quantitative evaluation, they aimed to minimize the difference between the generated question and the true question in the training set during training. Also, they used the standard back-propagation through time with the mini-batch stochastic gradient descent algorithm to learn the model parameters. They employed teacher forcing procedure for training LSTMs. To enhance performance, they also implemented beam search, a greedy but effective approximation to exhausitively search and select the top 25 cancidate output question sentences. The final one would be the one with the lowest negative log likelihood.</p>
+<p>The general QG-Net model Architecture is as below:</p>
+<div class="figure">
+<img src="img/qgnet.png" alt="ma" />
+<p class="caption">ma</p>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>In this summary <a href="http://www.cs.cornell.edu/~xdu/papers/acl17_dsc_poster.pdf">Learning to Ask</a>, they used a sentence- and paragraph-level seq2seq model to read text from the input content and to generate a question about the input sentence.</li>
+</ol>
+<p>For the second option, we need to encode both sentence and paragraph that sentence belongs to as input, but only attending source sentence hidden states. The performance could be improved with beam search and UNK replacement.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>In this paper <a href="https://openreview.net/pdf?id=rk3pnae0b">TOPIC-BASED QUESTION GENERATION</a>, they proposed a topic-based question generation algorithm. The algorithm will be able to take in a input sentence, a topic and a question type; then generate a word sequence related to the topic, question type and the input sentence.</li>
+</ol>
+<p>They are formulating a conditional likelihood objective function to achieve this goal.</p>
+<p>Also, in the paper, they proposed a few frameworks that were used to tackle this problem. The first type is seq2seq model. This model typically uses a bidirectional LSTM as the encoder to encode a sentence and a LSTM as the decoder to generate the target question.</p>
+<p>The second approach is question pattern prediction and question topic selection algorithms. It takes in an automatically selected phrase Q and fill this phrase into the pattern that was predicted from pre-mined patterns, which is not done with deep learning.</p>
+<p>The last approach is multi-source seq2seq learning which aims to integrate information from multiple sources to boost learning.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>In this paper <a href="https://arxiv.org/pdf/1808.04961.pdf">A Framework for Automatic Question Generation from Text using Deep Reinforcement Learning</a> they proposed a novel way of solving this problem in which they used a reinforcement learning framework that consists of a generator and an evaluator.</li>
+</ol>
+<p>They refer to the generator as the <span class="math inline">\(agent\)</span> and the <span class="math inline">\(action\)</span> of the agent is to generate the next work in the question. The probability of decoding a word <span class="math inline">\(P_{\theta}(word)\)</span> gives a stochastic policy.</p>
+<p>The evaluator will in turn assign a reward for the output sequence predicted using the current policy of the generator. Based on the reward assigned by the evaluator, the generator updates and improves its current policy. The goal in RL-based question generation is to find a policy that can maximize the sum of the expected return at the end of the sequence generated.</p>
+</div>
+<div id="summary" class="section level4">
+<h4><span class="header-section-number">4.2.2.2</span> Summary</h4>
+<p>In this QG section, we have discussed 4 algorithms. They provide us a way to frame our problem for which we can apply generative seq2seq model framework. As for our objective function, we are formuating a conditional probability distribution that is conditioned on the provided content (i.e. the video) and answers. Typically, we can use a bi-directional LSTM as the encoder to encode the content and use a LSTM as the decoder to generate the question.</p>
+<p>However, as you probabily have noticed that the above examples are focus mainly on processing the text input data instead of videos directly. It demonstrates that more reserch in this new area is needed so as to meet our particular needs.</p>
+</div>
+</div>
+<div id="answer-generation" class="section level3">
+<h3><span class="header-section-number">4.2.3</span> Answer Generation</h3>
+<div id="close-ended-questions" class="section level4">
+<h4><span class="header-section-number">4.2.3.1</span> Close-ended Questions</h4>
+<div id="visual-question-answering-vqa" class="section level5">
+<h5><span class="header-section-number">4.2.3.1.1</span> Visual Question Answering (VQA)</h5>
+<p>As what we have covered above, most QG problem focuses solely on generating questions but not the answers based on the context.</p>
+<p>VQA is a challenging research problem that focuses on providing a natural language answer given any image and any free-form natural language question. As we are managing to handle the video educational content first that is likely to involve language processing and visual recognition tasks, VQA would be a proper start for us. By leveraging this type of algorithm, we enable our system to easily evaluate the answer provided by learners which could in turn automated the whole question + answering + evaluation cycle.</p>
+<p>Since we are dealing with visual input, question-guided attention mechanism is a key component for solving this type of task. Started from the attention mechanism that can adaptively learn the most relevant image regions for a given question. Then to stack multiple question-guided attention mechanisms to learn the attention in an iterative way. Also, it is possible to use bilinear features to integrate the visual features from the image spatial grids with question features to predict attention. Considering the questions in natural language may also contain some noise, the co-attention mechanism can jointly learn the attention for both the image and question.</p>
+<ol style="list-style-type: decimal">
+<li>In this paper <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Yalong_Bai_Deep_Attention_Neural_ECCV_2018_paper.pdf">Deep Attention Neural Tensor Network for Visual Question Answering</a>, they proposed a novel deep attention neural tensor network that can discover the joint correlation over images, questions and answers with tensor-based representation.</li>
+</ol>
+<p>As for their workflow, they modeled one of the pairwise interaction (i.e. between image and question) by bilinear features, which is further encoded with the thrid dimension (i.e. answer) to be a triplet using bilinear tensor product. During this step, the model takes in a question + a corresponding image + candidate answers as the input. A CNN (convolutional neural network) a GRU RNN (recurrent neural network) are used for extracting feature vectors and question respectively. Then the representation is passed on as a multi-modal features and integrated by bilinear pooling module. Moreover, they decompose the correlation of triplets by their question and answer types with a slice-wise attention module on tensor to select the most discriminative reasoning process inference.</p>
+<p>In the end, they optimize the proposed network by learning a label regression with KL-divergence losses.</p>
+<p>They clamined that with these techniques, they can enable scalable training and fast convergence over a large number of answer set.</p>
+<p>During the inference stage, they feed the embeddings of all candicate answer into the network and then select the answer which has the biggest triplet relevance socre as the final answer.</p>
+<p>The high-level network architecture is as follows:</p>
+<div class="figure">
+<img src="img/vqa.png" alt="Deep Attention Neural Tensor Network" />
+<p class="caption">Deep Attention Neural Tensor Network</p>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>In this paper <a href="https://arxiv.org/pdf/1804.02088.pdf">Question Type Guided Attention in Visual Question Answering</a>, they proposed a model called Question Type-guided Attention (QTA). This model utilizes the information of question type to dynamically balance visual features from both top-down and bottom-up orders.</li>
+</ol>
+<p>Finally, they propose a multi-task extension that is trained to predict question types from the lexical inputs during training which generalizes the network into applications that lack question type, with a minimal performance loss.</p>
+<p>As for their main contribution, they focus on developing an attention mechanism that can exploit high-level semantic information on the question type to guide the visual encoding process.</p>
+<p>Specifically, they introduced a novel VQA architecture that can dynamically gate the contribution of ResNet and Faster R-CNN features based on the question type. In turn, it allows them to integrate the information from multiple visual sources and obtain gains across all question types.</p>
+</div>
+<div id="video-question-answering" class="section level5">
+<h5><span class="header-section-number">4.2.3.1.2</span> Video Question Answering</h5>
+<p>The recent advancements that we discussed above in VQA domain have shown some promising implication. In terms of achieving our particular goal, it is also worth mentioning that VQA might be a good start but it is not sufficient yet. To bridge this gap, let’s focus our attention on some video question answering algorithms that have been proposed.</p>
+<ol style="list-style-type: decimal">
+<li>In this paper <a href="https://www.ijcai.org/proceedings/2018/0513.pdf">Multi-Turn Video Question Answering via Multi-Stream Hierarchical Attention Context Network</a>, they proposed a hierarchical attention context network for context-aware question understanding by modeling the hierarchically sequential conversation context structure. They also incorporate the multi-step reasoning process fro the multi-stream hierarchical attention context network to enable the progressive joint representation learning of the multi-stream attentional video and context-aware question embedding.</li>
+</ol>
+<p>The construct their dataset by collecting the conversational video question answering datasets from YouTubeClips and TACoS-MultiLevel in which the first one has 1987 videos and the second daaset has 1303 videos. They invite 5 pairs of crowd-sourcing workers to construct 5 different conversational dialogs. In total, they have collected 37228 video question answering pairs for TACoS-MultiLevel data and 66806 ones for YouTubeClips data.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>In this paper <a href="https://arxiv.org/pdf/1512.02902.pdf">MovieQA: Understanding Stories in Movies through Question-Answering</a>, they introduced a new dataset called MovieQA dataset that can evaluate automatic story comprehension from both video and text.</li>
+</ol>
+<p>They collected 408 subtitled movies and obtained their extended summaries in the form of plot synopses(movie summaries that fans write after watching the movie) from Wikipedia. They used plot synopses as a proxy for the movie. They have annotators create both quizzes and answers pairs by referring to the story plot. Time-stamp is also attached with each question.</p>
+<p>In the second step of data collection, they used the multiple-choice answers and question collected as the input to show to the annotators. By doing so, annotators can re-formulate the question and answers while doing the sanity check.</p>
+</div>
+<div id="summary-1" class="section level5">
+<h5><span class="header-section-number">4.2.3.1.3</span> Summary</h5>
+<p>By going through the previous examples, we can see that VQA is very particular type of algorithms that is designed to efficiently process image and text input data while making the inference based on the input. Attention is a typical mechanism applied in this type of problems and multiple forms of multipulation on the attention mechanism used in these models have significantly improved the model performance.</p>
+<p>Going from VQA to video question answering algorithm, it has been a great leap. The main insight we can directly draw from these video QA papers is that we can follow their steps to collect and annonate our training data by asking crowd-sourcing workers to construct the question and answer pairs. Also, more advanced algorithm like the one described above multi-stream hierarchical attention context network is in need for dealing with video input data in contrast to static pictures.</p>
+</div>
+<div id="dual-question-answering-model" class="section level5">
+<h5><span class="header-section-number">4.2.3.1.4</span> Dual Question-Answering Model</h5>
+<p>Both Question Generaion(QG) and Question Answering(QA) are well-defined 2 sets of models that aim to either infer a question or an answer given the counterpart based on the context. However, they are usually explored separately despite of their intrinsic complementary relationship. In our case, a sysem that can take on both roles simultaneously are needed to fully automated learning + feedback process.</p>
+<p>There are some algorithms are designed to fulfill both roles.</p>
+<p>1.In this paper <a href="https://arxiv.org/pdf/1809.01997.pdf">Dual Ask-Answer Network for Machine Reading Comprehension</a> they presente a model that can learn question answering and question generation simultaneousely. They tie the network components that playing the similar roles into 2 tasks to transfer cross-task knowledge during training. Then the cross-modal interaction of question, context and answer is captured with a pair of symmetric hierarchical attenion processes.</p>
+<p>The high-level architecture of the model is illustrate as below:</p>
+<div class="figure">
+<img src="img/qgqa.png" alt="Dual Ask-Answer Network 1" />
+<p class="caption">Dual Ask-Answer Network 1</p>
+</div>
+<div class="figure">
+<img src="img/daan.png" alt="Dual Ask-Answer Network 2" />
+<p class="caption">Dual Ask-Answer Network 2</p>
+</div>
+<p>In short, the model is composed of embedding layer, encoding layer, attention layer and output layer. The model is fed with a question-context-answer triplet (Q,C,A) and the decoded Q and A from the output layer. Their loss function consists of 2 parts:</p>
+<ul>
+<li><p>The negative log-likelihood loss</p></li>
+<li><p>a coverage loss to penalize repetition of the generated text</p></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>In this paper <a href="https://arxiv.org/pdf/1805.05942.pdf">Harvesting Paragraph-Level Question-Answer Pairs from Wikipedia</a>, they applied their question-answer pair generation system to 10000 top-ranking Wikipedia articles and create over a million question-answer pairs.</li>
+</ol>
+<p>In their task formulation part, they mentioned that they break this task into 2 sub-tasks:</p>
+<ul>
+<li><p>candidate answer extraction</p></li>
+<li><p>answer-specific question generation</p></li>
+</ul>
+<p>To achieve them, they first identify a set of question-worthy candidate answers ans = (A1, A2,…Ai). For each candidate answer Ai, they then aim to generate a question Q - a sequence of tokens y1,y2,…yn - based on the sentence S that contains candidate Ai such that Q asks about an aspect of Ai (of potential interest to a human) and Q might rely on information from sentences that preceeds S in the paragraph. Mathmatically, they compose a function <span class="math display">\[Q = argmax_Q P(Q|S,C)\]</span>.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>In this paper <a href="http://cvboy.com/pdf/publications/cvpr2018_iqan.pdf">Visual Question Generation as Dual Task of Visual Question Answering</a>, they proposed an end-to-end unified model, Invertible Question Answering (iQAN) to introduce question generation as a dual task of question answering to imrpove VQA pefromance.</li>
+</ol>
+<p>In achieving their goal, they leverage dual learning framework that is proposed in machine translation area initially, which uses A-to-B and B-to-A translation models to form two closed translation loops and let them teach each other through a reinforcement learning process.</p>
+<p>In their VQA component, given a question <span class="math inline">\(q\)</span>, an RNN is used for obtaining the embedded feature <strong>q</strong>, and CNN is used to transform the input image <span class="math inline">\(v\)</span> into a feature map. A MUTAN-based attention module is then used to generate a question-aware visual feature <span class="math inline">\(v_q\)</span> from the image and the question. Later, another MUTAN fusion module is used for obtaining the answer feature <span class="math inline">\(a\hat{}\)</span></p>
+<ol start="4" style="list-style-type: decimal">
+<li>In this paper <a href="https://arxiv.org/pdf/1709.01058.pdf">A Unified Query-based Generative Model for Question Generation and Question Answering</a>, they propose a query-based generative model for solving both tasks. The model follows the classic encoder-decoder framework. The multi-perspective matching encoder that they are implementing is a bi-directional LSTM RNN model that takes a passage and a query as input and perform query understanding by matching it with the passage from multiple perspectives; The decoder is an attention-based LSTM RNN model with copy and coverage mechanism. In the QG task, a question will be generated from the model given the passge and the target answer, whereas in the QA task, the answer will be generated given the question and the passage. They also leverage a policy-gradient reinforcement learning algorithm to overcome exposure bias (a major problem resulted from sequence learning with cross-entropy loss function).They case both QG and QA tasks into one process by firstly matching the input passage against the query, then generating the output based on the matching results.</li>
+</ol>
+<p>As for the training process, they first pretrain the model with cross-entropy loss and then they fine tune the model parameters with policy-gradient reinforcement learning to alleviate the exposure bias problem. During the policy-gradient reinforcement learning algorithm, they end up adopting a similar sampling strategy as the scheduled sampling strategy for generating the sampled output.</p>
+</div>
+<div id="summary-draft" class="section level5">
+<h5><span class="header-section-number">4.2.3.1.5</span> Summary [DRAFT]</h5>
+<p>As what have discussed above, we can see that there have been many attemps taken in the recent years for handling both tasks at the same time and some significant progress have been made.</p>
+</div>
+</div>
+<div id="open-ended-question-draft" class="section level4">
+<h4><span class="header-section-number">4.2.3.2</span> Open-ended Question [DRAFT]</h4>
+<div id="general-question" class="section level5">
+<h5><span class="header-section-number">4.2.3.2.1</span> General Question</h5>
+<p>As I mentioned aboce, one of the most general open-ended questions is to ask learner to provide a short summary of the learning content.</p>
+</div>
+<div id="specific-question" class="section level5">
+<h5><span class="header-section-number">4.2.3.2.2</span> Specific Question</h5>
+<p>At the first glance, it appears hard for our system to effectively generate the question. However, this type of task is not that far-fetched by using some specifically designed deep learning frameworks.</p>
+<p>As for the automated feedback or learning grading system, there are plenty of suggestions have been proposed as well to tackle such a question. The framework is called automated essay scoring (AES) which focuses on automatically analyzing the quality of writing and assigning a score to the text.</p>
+<p>In terms of knowledge or learning evaluation, the format could be diversed i.e. a lecture given by the learner or an short summary essay written by the learner. Regardless the form, we can always convert the content into a predictable text, graphic or audible format that model can process.</p>
+<p>As we mentioned above, for these type of task, we can implementing RNN to process the content and even enhance the model performance by adversarially craft input as this paper <a href="http://aclweb.org/anthology/N18-1024">Neural Automated Essay Scoring and Coherence Modeling for Adversarially Crafted Input</a> illustrated.</p>
+</div>
+</div>
+</div>
+<div id="summary-of-learning-and-feedback-networks-draft" class="section level3">
+<h3><span class="header-section-number">4.2.4</span> Summary of Learning and Feedback Networks [DRAFT]</h3>
+<div id="summary-current-research" class="section level4">
+<h4><span class="header-section-number">4.2.4.1</span> Summary current research</h4>
+</div>
+<div id="areas-where-new-stuff-needs-to-be-made-research-current-reserach-is-promising-but-we-need-more-reserach-and-innovation-in-this-area" class="section level4">
+<h4><span class="header-section-number">4.2.4.2</span> Areas where new stuff needs to be made research [current reserach is promising but we need more reserach and innovation in this area]</h4>
+</div>
+<div id="datasets-and-annotaters-needed" class="section level4">
+<h4><span class="header-section-number">4.2.4.3</span> datasets and annotaters needed</h4>
+</div>
+</div>
+</div>
+<div id="knowledge-graph-draft" class="section level2">
+<h2><span class="header-section-number">4.3</span> Knowledge Graph [DRAFT]</h2>
+<p>Next, we need to consider how we can select an adequate and relevant learning masterial and generate an effecive learning map for the learners based on their current progress and the general knowledge graph/map, given the ever growing amount of educational content on the web.</p>
+<p>As I mentioned earlier, learning is a knowledge accumulation process. Knowledge itself has its unique structure that can help us learn in a most effective and productive way. Knowledge Graph is a great tool that we developed to map and present the structure of knolwedge. In shirt, knowledge graphs are collections of relational facts, where each fact states that a certrain relation holds between 2 entities.</p>
+<ol style="list-style-type: decimal">
+<li><p>In this paper <a href="http://www.mlgworkshop.org/2018/papers/MLG2018_paper_5.pdf">Generalized Embedding Model for Knowledge Graph Mining</a>, they have presented a model for learning neural presentation of generalized knowledge graphs using a novel muli-shot unsupervised neural network model, called the <strong>Graph Embedding Network (GEN)</strong>. This model is able to learn different types of knowlege graphs from a universal perspective and it provides flexibility in learning representations that work on graphs conforming to different domains.</p></li>
+<li><p>In this paper <a href="https://openreview.net/pdf?id=rJ4qXnCqFX">Probabilisic Knowledge Graph Embeddings</a>, they explored a new type of embedding model that can link prediction in relational knowledge graph.</p></li>
+<li><p>In this paper <a href="http://aclweb.org/anthology/N18-1020">Zero-Shot Question Generation from Knowledge Graphs for Unseen Predicates and Entity Types</a>, they presented a network that can generate question from knowledge b</p></li>
+</ol>
+<div id="summary-of-knowledge-graph-draft" class="section level3">
+<h3><span class="header-section-number">4.3.1</span> Summary of Knowledge Graph [DRAFT]</h3>
+<div id="summary-current-research-1" class="section level4">
+<h4><span class="header-section-number">4.3.1.1</span> summary current research</h4>
+</div>
+<div id="areas-where-new-stuff-needs-to-be-made-research-current-reserach-is-promising-but-we-need-more-reserach-and-innovation-in-this-area-1" class="section level4">
+<h4><span class="header-section-number">4.3.1.2</span> areas where new stuff needs to be made research [current reserach is promising but we need more reserach and innovation in this area]</h4>
+</div>
+<div id="datasets-and-annotaters-needed-1" class="section level4">
+<h4><span class="header-section-number">4.3.1.3</span> datasets and annotaters needed</h4>
+</div>
+</div>
+</div>
+<div id="knowledge-journeys-draft" class="section level2">
+<h2><span class="header-section-number">4.4</span> Knowledge Journeys [DRAFT]</h2>
+<p>The knowledge graph is our ground truth and can be applied universally to some extent, but everyone’s learning journey is still highly custom. In terms of learning, everyone seems to have their unique set of problems that they are curious about and everyone is on their own mission towards the mastery. As a result, their knowlege journeys could have a lot more degree of freedom depends on the learn’s learning history, interests and who they are related to.</p>
+<p>We cannot possibly put such an online learning/teaching system into use without taking this crucial factor into our account. However, this is not a trivial problem that can be solved with 1 network or 2.</p>
+<p>Let’s first formulate our problem before we dive into the possible solutions. Below are few key components that we need to combine to achieve our ultimate goal which is to appropriately guide the learner through their unique knowledge journey:</p>
+<ol style="list-style-type: decimal">
+<li>First, we need to</li>
+</ol>
+<p>, we can rely on some heuristic and models that have been developed to resolve this type of idiosymcratic issue.</p>
+<p>As we all know that a recommender system is an intuitive line of defense against consumer over-choice given the evern growing information available on the web. As we mentioned earlier in the knowledge graph, a authoritative and personalized recommending system is essential for facilitating the learning.</p>
+<p>Typically, a recommendation models can be classified into 3 main categories:</p>
+<ol style="list-style-type: decimal">
+<li><p>Collaborative filtering</p></li>
+<li><p>Content based</p></li>
+<li><p>Hybrid recommender system</p></li>
+</ol>
+<p>As I mentioned, here we will mainly focus on hybrid recommender system.</p>
+<p>There are a diverse array of achitectual paradigms that are closely related recommending system. Let’s take a look at few of them: 1. Autoencoder</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Convolutional Neural Network</p></li>
+<li><p>Recurrent Neural Network</p></li>
+<li><p>Restricted Boltzmann Machine (RBM)</p></li>
+<li><p>Adversarial Networks</p></li>
+<li><p>Attentional Models (AM)</p></li>
+<li><p>Deep Reinforcement Learning (DRL)</p></li>
+</ol>
+<div id="summary-of-current-research-and-needs-draft" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> Summary of Current Research and Needs [DRAFT]</h3>
+</div>
+</div>
+<div id="data-and-annotation-draft" class="section level2">
+<h2><span class="header-section-number">4.5</span> Data and Annotation [DRAFT]</h2>
+<div id="reference-draft" class="section level3">
+<h3><span class="header-section-number">4.5.1</span> Reference [DRAFT]</h3>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://arxiv.org/pdf/1808.04961.pdf">A Framework for Automatic Question Generation from Text using Deep Reinforcement Learning</a></p></li>
+<li><p><a href="https://arxiv.org/pdf/1705.00106.pdf">Learning to Ask: Neural Question Generation for Reading Comprehension</a></p></li>
+<li><p><a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Yalong_Bai_Deep_Attention_Neural_ECCV_2018_paper.pdf">Deep Attention Neural Tensor Network for Visual Question Answering</a></p></li>
+<li><p><a href="http://www.cs.cornell.edu/~xdu/papers/acl17_dsc_poster.pdf">Learning to Ask</a></p></li>
+<li><p><a href="https://openreview.net/pdf?id=rk3pnae0b">TOPIC-BASED QUESTION GENERATION</a></p></li>
+<li><p><a href="https://arxiv.org/pdf/1707.07435.pdf">Deep Learning based Recommender System</a></p></li>
+</ol>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="concepts.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conclusion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/dyadxmachina/can-machines-teach/edit/master/02-survey.Rmd",
+"text": "Edit"
+},
+"download": ["A Dyadic Approach to Learning Language.pdf", "A Dyadic Approach to Learning Language.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

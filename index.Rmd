@@ -1,0 +1,23 @@
+--- 
+title: "A Dyadic Approach to Learning Languages"
+author: "Fanli Zheng  (Christian) & Haohan Wang"
+knit: "bookdown::render_book"
+date: "[DRAFT] `r Sys.Date()`"
+output: pdf_document
+description: Learning a language is difficult and it should be, learning any new form of expression is a brain altering process that takes commitment. I set out to learn my partner Haohan's Wang first learned language Mandarin more than three yeras ago. We took a very different approach which will explain. We will attempt to cover what worked and what did not. Along with an immersion plan. Learning as a dyad, has great advantages but since you are balancing a relationship it can be extremely difficult.  
+documentclass: book
+link-citations: yes
+bibliography:
+- book.bib
+- packages.bib
+site: bookdown::bookdown_site
+colorlinks: yes
+biblio-style: apalike
+url: 'https\://github.com/dyadxmachina/dyad-language-learning'
+github-repo: dyadxmachina/dyad-language-learning
+cover-image: img/MtoQA.png
+---
+
+# Background {-}
+
+![ Educational Content to Question-Answer Generation ](https://camo.githubusercontent.com/61abe5df7256a109d539a39c2b2cecd3d3ec0928/68747470733a2f2f696d6167652e6962622e636f2f6b684a7542372f53637265656e73686f745f66726f6d5f323031385f30355f30355f31375f33385f30352e706e67)
