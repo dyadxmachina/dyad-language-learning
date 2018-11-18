@@ -20,4 +20,12 @@ cover-image: img/MtoQA.png
 
 # Background {-}
 
-![ Educational Content to Question-Answer Generation ](https://camo.githubusercontent.com/61abe5df7256a109d539a39c2b2cecd3d3ec0928/68747470733a2f2f696d6167652e6962622e636f2f6b684a7542372f53637265656e73686f745f66726f6d5f323031385f30355f30355f31375f33385f30352e706e67)
+![How to Learn A Language as a Dyad (Couple)](https://camo.githubusercontent.com/61abe5df7256a109d539a39c2b2cecd3d3ec0928/68747470733a2f2f696d6167652e6962622e636f2f6b684a7542372f53637265656e73686f745f66726f6d5f323031385f30355f30355f31375f33385f30352e706e67)
+
+**Get chapter updates sent to your email.**
+```{r echo=FALSE, results="asis"}
+
+library(readr)
+cat( paste( readLines( "mailchimp.html" , warn = FALSE) ) )
+
+```
